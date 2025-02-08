@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <title>Login Page</title>
+</head>
+<body>
+<div class="mx-auto max-w-screen-xl px-4 py-16 sm:px-6 lg:px-8">
+    <div class="mx-auto max-w-lg">
+      <h1 class="text-center text-2xl font-bold text-indigo-600 sm:text-3xl">Mulai hari ini juga!</h1>
+  
+      <p class="mx-auto mt-4 max-w-md text-center text-gray-500">
+        Kami hadir untuk memudahkanmu mencari tempat tinggal nyaman yang sesuai dengan kebutuhan dan budget. 
+        Dengan pilihan kos yang beragam, lokasi strategis, dan fasilitas terbaik, hidupmu jadi lebih praktis!
+      </p>
+  
+      <form action="#" class="mt-6 mb-0 space-y-4 rounded-lg p-4 shadow-lg sm:p-6 lg:p-8">
+        <p class="text-center text-lg font-medium">Login ke akun mu..</p>
+  
+        <div>
+          <label for="email" class="sr-only">Email</label>
+  
+          <div class="relative">
+            <input
+              type="email"
+              id="email"
+              class="w-full rounded-lg border-gray-200 p-4 pe-12 text-sm shadow-xs"
+              placeholder="Masukkan Email mu.."
+            />
+          </div>
+        </div>
+  
+        <div>
+          <label for="password" class="sr-only">Password</label>
+  
+          <div class="relative">
+            <input
+              type="password"
+              id="password"
+              class="w-full rounded-lg border-gray-200 p-4 pe-12 text-sm shadow-xs"
+              placeholder="Masukkan Passwordmu.."
+            />
+          </div>
+        </div>
+  
+        <button
+          id="signInButton"
+          type="button"
+          class="block w-full rounded-lg bg-indigo-600 px-5 py-3 text-sm font-medium text-white"
+        >
+          Sign In
+        </button>
+  
+        <p class="text-center text-sm text-gray-500">
+          Tidak punya akun?
+          <a class="underline" href="SignUp.html">Buat akun yuk..</a>
+        </p>
+      </form>
+    </div>
+  </div>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+        document.getElementById("signInButton").addEventListener("click", function () {
+            window.location.href = "dashboard.html";
+        });
+    });
+  </script>
+
+</body>
+</html>
